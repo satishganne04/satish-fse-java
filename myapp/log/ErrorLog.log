@@ -1,0 +1,8 @@
+06-Dec-2022 10:28:42 ERROR - Validator.INVALID_EMPLOYEE_NAME
+java.lang.Exception: Validator.INVALID_EMPLOYEE_NAME
+	at com.myapp.validator.Validator.validate(Validator.java:12) [classes/:?]
+	at com.myapp.Tester.main(Tester.java:12) [classes/:?]
+06-Dec-2022 10:30:10 ERROR - Validator.INVALID_EMPLOYEE_NAME
+java.lang.Exception: Validator.INVALID_EMPLOYEE_NAME
+	at com.myapp.validator.Validator.validate(Validator.java:12) [classes/:?]
+	at com.myapp.Tester.main(Tester.java:12) [classes/:?]
