@@ -1,0 +1,5 @@
+02-Dec-2022 07:29:25 INFO - Jon logged in successfully
+02-Dec-2022 07:38:12 ERROR - Cannot invoke "String.isBlank()" because "username" is null
+java.lang.NullPointerException: Cannot invoke "String.isBlank()" because "username" is null
+	at LoggingDemo.UserAuthentication.loginUser(UserAuthentication.java:11) [bin/:?]
+	at LoggingDemo.Test.main(Test.java:7) [bin/:?]
