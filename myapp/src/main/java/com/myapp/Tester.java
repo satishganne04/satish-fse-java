@@ -8,7 +8,7 @@ import com.myapp.validator.Validator;
 public class Tester {
 	public static void main(String[] args) throws Exception{		
 		try {
-			Employee employee = new Employee(1234,"   ",120000);
+			Employee employee = new Employee(1234,"satish",120000);
 			new Validator().validate(employee);
 			System.out.println("The employee details are successfully validated.");
 		} 
