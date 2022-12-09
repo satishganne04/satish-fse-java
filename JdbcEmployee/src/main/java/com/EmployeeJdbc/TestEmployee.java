@@ -225,6 +225,24 @@ public static void main(String[] args) throws SQLException {
 		
 		}
 	}
+      else if(selection==5) {
+		
+		System.out.println("update Employee By id:");
+		System.out.println("enter the id:");
+		String id = scanner.next();
+		ps = con.prepareStatement("update Employees set salary =111111 WHERE id=" + id + ";");
+		int rowsupdated=ps.executeUpdate();
+		if(rowsupdated>0) {
+		
+		
+		
+		
+		System.out.println( id + " - succesfully updated");
+		
+		}
+	}
+	
+	
 		
 	
 	}
