@@ -1,7 +1,13 @@
-package com.jdbc.Employees;
+package com.java.scanner;
 
 import java.sql.SQLException;
 import java.util.Scanner;
+
+import com.jdbc.crudClasses.AddEmployee;
+import com.jdbc.crudClasses.AllEmployess;
+import com.jdbc.crudClasses.DeleteEmployee;
+import com.jdbc.crudClasses.SearchEmployee;
+import com.jdbc.crudClasses.UpdateEmployee;
 
 public class ScannerClass {
 	public static void scanner() throws SQLException {
@@ -26,6 +32,9 @@ public class ScannerClass {
 	
 	selection=Integer.parseInt(scanner.next());
 	
+	String role = null;
+
+	
 	if(selection ==1) {
 		AddEmployee.addEmployee();
 	}
@@ -45,6 +54,8 @@ public class ScannerClass {
 	}
 		
 	}
+	
+	
 	
 	
 	

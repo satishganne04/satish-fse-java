@@ -1,4 +1,4 @@
-package com.jdbc.Employees;
+package com.jdbc.crudClasses;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,7 +12,8 @@ import java.util.Scanner;
 
 import com.jdbc.Entity.Employee;
 
-
+//Single Responsibility Principle 
+//to get all details
 public class AllEmployess {
 	
 	

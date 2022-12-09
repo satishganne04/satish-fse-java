@@ -1,4 +1,4 @@
-package com.jdbc.Employees;
+package com.jdbc.crudClasses;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +8,8 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 import com.jdbc.Entity.Employee;
-
+//Single Responsibility Principle 
+//this class in only for adding employess
 public class AddEmployee {
 	@SuppressWarnings("null")
 	public static void addEmployee() throws SQLException {

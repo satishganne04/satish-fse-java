@@ -1,4 +1,4 @@
-package com.jdbc.Employees;
+package com.jdbc.crudClasses;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
-
+//Single Responsibility Principle 
+//to update employee
 public class UpdateEmployee {
 
 	public static void updateEmployee() throws SQLException {
