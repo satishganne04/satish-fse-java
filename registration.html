@@ -67,29 +67,40 @@
 </tr>
 
  
+<tr>
+    <td class="required">Current GPA</td>
+    <td>
+        <input type="number" name="gpa" id="gpa" max="5" step="0.1" required>
+    </td>
+</tr>
 
 <tr>
-<td rowspan="3">Contact Details</td>
-<td>Phone number</td>
-<td><input type ="text"></td>
+    <td  rowspan="2">Contact Details</td>
+    <td >Phone Number</td>
+    <td>
+       <input type="tel" >
+    </td>            
 </tr>
 <tr>
-<td rowspan="4">Address</td>
-<td><input type ="text"></td>
+    <td >Address</td>
+    <td>
+        <textarea name="address" id="address" cols="80" rows="4" maxlength="40" required></textarea>
+    </td>
 </tr>
+
 
  
 
 <tr>
-    <th colspan="4"><h2>XYZ University Student Registrstion</h2></th>
-    </tr>
-
- 
-
-<tr>
-<td colspan="4"> <input type="submit" value="Submit"></td>
+    <th colspan="3">
+        I assure all the details enterd are correct: 
+        <input type="checkbox" name="consent" id="consent">
+    </th>
 </tr>
-  </form>
+<tr>
+    <td colspan="3" class="btn-submit" style=text-align:center;>
+        <input  type="submit" value="Submit">
+    </td>
 
  
 

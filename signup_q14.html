@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signupform</title>
+    <style>
+        body{
+           background: navy;
+            border: 5px solid orange;
+            padding:50px;
+            width:50%;
+            }
+            .container{
+                width:43%;
+                margin: 50px;
+                
+                background:green;
+                margin-top:50px;
+                margin-bottom: 50px;
+                padding: 5px;
+
+            }
+            form{
+                padding: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            h2{
+                text-align: center;
+                background: orange;
+                color: white;
+                padding: 10px;
+                border-radius:10px ;
+                font-style: italic;
+             }
+             input{
+                 padding: 10px;
+                 margin:5px;
+                 border-radius: 5px;
+                 border: none;
+                 font-style: italic;
+                 color: white;
+                
+               
+             }
+             input[type=text],input[type=email],input[type=password]{
+        width:90%;
+    }
+    input[type=submit]{
+        width:95%;
+        background: orange;
+        cursor:pointer;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        font-style: italic;
+    }
+    input[type=submit]:hover{
+        background:yellow;
+    }
+    input[type=checkbox]{
+        background:yellow;
+        color: white;
+
+    }
+    
+
+
+    </style>
+</head>
+<body>
+    <div class"container">
+    <h2>Sign Up Here</h2>
+    <form>
+        <input type="text" name="first name" placeholder="firstname"><br>
+        <input type="text" name="Last Name" placeholder="lLast Name"><br>
+        <input type="text" name="Enter Your Email Address" placeholder="Enter Your Email Address"><br>
+        <input type="text" name="Enter Your Email password" placeholder="Enter Your Email password"><br>
+        <input type="text" name="Re Enter Your Password" placeholder="Re Enter Your Password"><br>
+        <span style="font-size:20px;">Enter Your DOB</span>
+
+        <br>
+        <input type="text" name="DOB" placeholder="dd/mm/yyyy">
+        <br>
+        <input type="radio" name="male" value="male">male
+        <input type="radio" name="male" value="male">female
+        <input type="radio" name="male" value="male">others
+         <br>
+         <input type="checkbox" name="terms&conditons" value="terms&condtions">i agree terms and condtions</>
+           <br>
+           <input type="submit" value="Submit Here">
+    </form>
+
+    </div>
+    
+</body>
+</html>

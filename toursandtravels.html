@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-12</title>
+
+    <style>
+        .container {
+            background-color: #CDCDCD;
+            padding: 20px 0;
+        }
+        .form-div {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: auto;
+        }
+        input[type = text], input[type = email] {
+            width: 100%;
+            padding: 10px 15px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        input[type = submit]{
+            padding: 5px;
+            margin: 5px 0;
+            background-color: #008B45;
+            width: 5%;
+            border: none;
+            color: #fff;
+        }
+        .table-section {
+            width: 90%;
+        }
+        table{
+            width:100%;
+            border-width: 1px; 
+            border-color: #000000;
+        } 
+        table th,table td{            
+            border-width:1px; 
+            border-style: solid; 
+            border-color: #000000; 
+            padding: 3px 5px;
+            text-align: left;
+        } 
+        .btn-edit {
+            background-color: #00B2EE;
+            color: #fff;
+            border: none;
+            padding: 5px 10px
+        }
+        .btn-delete {
+            background-color: #AF1E2D;
+            color: #fff;
+            border: none;
+            padding: 5px 10px
+        }
+        .section-bottom-margin{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="form-section section-bottom-margin">
+            <form action="" class="form-div">                
+                Name:
+                <input type="text" name="name" id="name">
+                Email:
+                <input type="email" name="email" id="email"> 
+                <input type="submit" value="Save">
+            </form>
+        </section>
+        <section class="form-div">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Paresh</td>
+                    <td>paresh@gmail.com</td>
+                    <th>
+                        <button class="btn-edit" type="button">Edit</button>
+                        <button class="btn-delete" type="button">Delete</button>
+                    </th>
+                </tr>
+                <tr>
+                    <td>Hardik</td>
+                    <td>Hardik@gmail.com</td>
+                    <th>
+                        <button class="btn-edit" type="button">Edit</button>
+                        <button class="btn-delete" type="button">Delete</button>
+                    </th>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

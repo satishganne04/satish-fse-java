@@ -1,96 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style> 
-/*Calculator Body*/
-.calc-body {
-    width: 275px;
-    margin: auto;
-    min-height: 400px;
-    box-shadow: 0 8px 50px -7px black;
-    background: #3A4655;
-}
-/*Calculator Display Screen*/
-.calc-screen {
-    padding: 1rem;
-}
-#calc-operation {
-    font-size: 1.3rem;
-    text-align: right;
-    color: #727B86;
-    padding-bottom: .5rem;
-}
-#calc-typed {
-    font-size: 2rem;
-    text-align: right;
-    color: #fff;
-}
-/*Calculator Buttons*/
-.calc-button-row{
-    display: table;
-}
-.calc-button-row button {
-    display: table-cell;
-    width: 25%;
-    background: #425062;
-    color: #fff;
-    height: 65px;
-    font-size: 1.3rem;
-    border: none;
-    border-color:#3C4857;
-    border-width: 1px 1px 0px 0;
-    border-style: solid;
-}
-.calc-button-row button.ac {
-    color: #ff7665;
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin :0;
+            padding :0;
+            font-family: "Poppins",sans-serif;
+        }
+        body{
+            background: #5372f0;
+        }
+        .wrapper{
+            width: 350px;
+            height:480px;
+            margin: 65px auto;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        }
+        #display{
+            border: none;
+            outline: none;
+            width: 330px;
+            height:80px;
+            color: #5e5858;
+            font-size: 58px;
+            font-weight: 700;
+            padding: 10px;
+            text-align: right;
+            background: black;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+           
+        }
+        .button-box{
+            margin: 35px 15px;
+            background: gray;
+
+        }
+        .btn {
+     width: 60px;
+     height: 60px;
+     margin: 8px;
+     border:none;
+     outline: none;
+     cursor: pointer;
+     font-size: 28px;
+     line-height: 30px;
+    
+     background:white;
+
+ 
 }
 
-.calc-button-row button.opt {
-    color: #ffbc56;
-}
-/*The border has been managed in every fourth button so that the design will not distract.*/
-.calc-button-row button:nth-child(4n){
-    border-right: none;
-}
-.calc-button-row button:active {
-    position: relative;
-    top: 1px;
-}
-.calc-button-row button:hover {
-    background: #3e4b5c;
+        .btn:hover{
+            background: rgba(0,0,0,0.1);
+        }
+        .cbtn, .cbtn:hover{
+            background: red;
+            color: white;
 
-</style>
+        }
+        .mbtn, .mbtn:hover{
+            background: tomato;
+            color: white;
+        }
+ 
+    </style>
 </head>
 <body>
-<!-- Calculator Body -->
-<div class="calc-body">
+<div class="wrapper">
+    <form name="cal">
+        <input type="text" name="display" id="display" placeholder="0" readonly>
+        <br>
+        <div class="button-box">
+            <input type="button" class="btn" value="7"  onclick="cal.display.value +='7'">
+            <input type="button" class="btn" value="8"  onclick="cal.display.value +='8'">
+            <input type="button" class="btn" value="9"  onclick="cal.display.value +='9'">
+            <input type="button" class="btn mbtn" value="+"  onclick="cal.display.value +='+'">
+            <br>
+            <input type="button" class="btn" value="4"  onclick="cal.display.value +='4'">
+            <input type="button" class="btn" value="5"  onclick="cal.display.value +='5'">
+            <input type="button" class="btn" value="6"  onclick="cal.display.value +='6'">
+            <input type="button" class="btn mbtn" value="-"  onclick="cal.display.value +='-'">
+            <br>
+            <input type="button" class="btn" value="1"  onclick="cal.display.value +='1'">
+            <input type="button" class="btn" value="2"  onclick="cal.display.value +='2'">
+            <input type="button" class="btn" value="3"  onclick="cal.display.value +='3'">
+            <input type="button" class="btn mbtn" value="*"  onclick="cal.display.value +='*'">
+            <br>
+            <input type="button" class="btn cbtn" value="C"  onclick="cal.display.value =''">
+            <input type="button" class="btn" value="0"  onclick="cal.display.value +='0'">
+            <input type="button" class="btn mbtn" value="/"  onclick="cal.display.value +='/'">
+            <input type="button" class="btn mbtn" value="="  onclick="cal.display.value =eval(cal.display.value)">
 
-<!-- Calculator Display Screen -->
-<div class="calc-screen">
-    <div id="calc-operation">1234 + 567 + </div>
-    <div id="calc-typed">890</div>
+            <br>
+        </div>
+    </form>
+    
 </div>
-
-<!-- Calculator Buttons -->
-<div class="calc-button-row">
-    <button class="ac">AC</button>
-    <button class="opt">&#43;&#47;&#8722;</button>
-    <button class="opt">&#37;</button>
-    <button class="opt">&#247;</button>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button class="opt">&#215;</button>
-    <button>4</button>
-    <button>5</button>
-     <button>6</button>
-    <button class="opt">&#8722;</button>
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button class="opt">&#43;</button>
-    <button>0</button>
-    <button>.</button>
-    <button>&#9003;</button>
-   </body>
-   </html>
+</body>
+</html>
