@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>layout</title>
+</head>
+<style>
+*{
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    color: #fff;
+}
+
+.headerdiv{
+    width: 100%;
+    background-color: blueviolet;
+    height:80px;
+    margin-bottom: 10px;
+}
+.header{
+   text-align: center;
+}
+.footerdiv{
+    
+    width: 98.8%;
+    background-color: blueviolet;
+    height:80px;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 5px;
+}
+.footer{
+    text-align: center;
+}
+.maindiv{
+    background-color: lightgreen;
+    height: 21rem;
+    width: 63rem;
+    float:left;
+    margin-bottom: 5px;
+    
+    
+}
+.gridparent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 80px);
+    
+}
+.main{
+    text-align: center;
+}
+.sidebardiv{
+     background-color: red;
+     height: 21rem;
+     width: 20.1rem;
+     float: right;
+}
+.sidebar{
+    text-align: center;
+}
+.itemdiv{
+    
+    /* height: 5rem;
+    width: 5rem; */
+    background-color:green ;
+    border: 1px solid black;
+    margin: 10px;
+}
+.item{
+    text-align: center;
+}
+</style>
+<body>
+    <div class="container">
+         
+    <div class="headerdiv">
+        <h3 class="header">header</h3>
+    </div>
+    <div class="maindiv">
+        <h3 class="main">main</h3>
+        <div class="gridparent">
+        <div class="itemdiv">
+             <h3 class="item">item</h3>
+        </div>
+        <div class="itemdiv">
+            <h3 class="item">item</h3>
+       </div>
+       <div class="itemdiv">
+        <h3 class="item">item</h3>
+   </div>
+   <div class="itemdiv">
+    <h3 class="item">item</h3>
+</div>
+<div class="itemdiv">
+    <h3 class="item">item</h3>
+</div>
+<div class="itemdiv">
+    <h3 class="item">item</h3>
+</div>
+<div class="itemdiv">
+    <h3 class="item">item</h3>
+</div>
+<div class="itemdiv">
+    <h3 class="item">item</h3>
+</div>
+<div class="itemdiv">
+    <h3 class="item">item</h3>
+</div>
+<div class="itemdiv">
+    <h3 class="item">item</h3>
+</div>
+<div class="itemdiv">
+    <h3 class="item">item</h3>
+</div>
+</div>
+    </div>
+    <div class="sidebardiv">
+        <h3 class="sidebar">sidebar</h3>
+    </div>
+    <div class="footerdiv">
+        <h3 class="footer">footer</h3>
+    </div>
+</div>
+
+</body>
+</html>
